@@ -3,14 +3,14 @@
   "build": {
     "builder": "NIXPACKS",
     "watchPatterns": [
-      "electric bill app/backend/**"
+      "backend/**"
     ],
     "nixpacksConfigPath": "nixpacks.toml"
   },
   "deploy": {
     "runtime": "V2",
     "numReplicas": 1,
-    "startCommand": "cd 'electric bill app/backend' && python -m uvicorn main:app --host 0.0.0.0 --port $PORT",
+    "startCommand": "cd backend && python -m uvicorn main:app --host 0.0.0.0 --port $PORT",
     "sleepApplication": false,
     "useLegacyStacker": false,
     "multiRegionConfig": {
