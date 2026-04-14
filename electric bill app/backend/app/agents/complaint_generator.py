@@ -26,7 +26,7 @@ def generate_complaint(details: dict):
     
     try:
         completion = client.chat.completions.create(
-            model="google/gemini-3-flash-preview", 
+            model="openai/gpt-4o-mini", 
             messages=[{"role": "user", "content": prompt}],
             response_format={"type": "json_object"}
         )

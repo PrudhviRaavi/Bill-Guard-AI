@@ -43,7 +43,7 @@ def analyze_appliance_rating(image_bytes: bytes):
 
     try:
         completion = client.chat.completions.create(
-            model="google/gemini-3-flash-preview",
+            model="openai/gpt-4o-mini",
             messages=[
                 {
                     "role": "user",

@@ -34,7 +34,7 @@ def analyze_bill_image(image_bytes: bytes):
 
     try:
         completion = client.chat.completions.create(
-            model="google/gemini-3-flash-preview",
+            model="openai/gpt-4o-mini",
             messages=[
                 {
                     "role": "user",
@@ -49,7 +49,8 @@ def analyze_bill_image(image_bytes: bytes):
                     ]
                 }
             ],
-            response_format={"type": "json_object"}
+            response_format={"type": "json_object"},
+            max_tokens=1000
         )
         return completion.choices[0].message.content
     except Exception as e:

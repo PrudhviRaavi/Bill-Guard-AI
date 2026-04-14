@@ -34,7 +34,7 @@ def verify_meter_reading(image_bytes: bytes, billed_reading: float):
 
     try:
         completion = client.chat.completions.create(
-            model="google/gemini-3-flash-preview",
+            model="openai/gpt-4o-mini",
             messages=[
                 {
                     "role": "user",

@@ -37,8 +37,9 @@ def get_savings_tips(history: list):
 
     try:
         completion = client.chat.completions.create(
-            model="google/gemini-3-flash-preview",
-            messages=messages
+            model="openai/gpt-4o-mini",
+            messages=messages,
+            max_tokens=1000
         )
         return completion.choices[0].message.content
     except Exception as e:

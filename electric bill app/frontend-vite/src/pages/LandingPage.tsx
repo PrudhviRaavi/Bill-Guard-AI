@@ -554,8 +554,8 @@ export default function LandingPage() {
                     </div>
                 </div>
                 <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left text-base text-gray-400">
-                    <p>© 2025 BillGuard Inc. All rights reserved.</p>
-                    <p>Developed by Team <span className="text-red-600 font-bold">Syntaxia</span></p>
+                    <p>© 2026 BillGuard Inc. All rights reserved.</p>
+                    <p>Developed by <span className="text-red-600 font-bold">Prudhvi Raavi</span></p>
                 </div>
             </footer>
 

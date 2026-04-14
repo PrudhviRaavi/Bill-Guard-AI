@@ -49,7 +49,7 @@ def check_scam(request: ScamCheckRequest):
     """
     try:
         completion = client.chat.completions.create(
-            model="anthropic/claude-3-haiku-20240307",
+            model="openai/gpt-4o-mini",
             messages=[
                 {
                     "role": "system",
